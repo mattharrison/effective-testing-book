@@ -1,6 +1,6 @@
 # Effective Testing with pytest & friends
 
-![Cover](cover/cover.png)
+![Cover](efftest.png)
 
 A practical guide to testing Python code with pytest, doctest, type checking, uv, GitHub actions, precommit hooks, linting and more.
 
