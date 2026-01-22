@@ -1,0 +1,19 @@
+[project]
+name = "tinylm"
+version = "0.1.0"
+description = "Tiny project used to demonstrate Hypothesis property-based testing"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.141.1",
+    "pytest>=8.4.2",
+    "zizmor>=1.16.3",
+]
+

@@ -1,0 +1,25 @@
+[project]
+name = "tinylm"
+version = "0.1.0"
+description = "Tiny Markov model used for Effective Testing examples"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = []
+
+[project.scripts]
+tinylm = "tinylm:main"
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.4.2",
+]
+
+[tool.pytest.ini_options]
+markers = [
+    "fast: quick checks suitable for tight loops",
+    "slow: tests that intentionally take longer to run",
+]

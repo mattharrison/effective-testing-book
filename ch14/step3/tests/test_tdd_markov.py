@@ -1,0 +1,20 @@
+import pytest
+
+import tinylm
+
+
+def test_predict_unsupported_input_length_is_clear() -> None:
+    model = tinylm.Markov("abc", size=1)
+    with pytest.raises(ValueError, match="exceeds model size"):
+        model.predict("ab")
+
+
+def test_predict_still_works_for_supported_inputs() -> None:
+    model = tinylm.Markov("abc", size=1)
+    assert model.predict("a") == "b"
+
+
+def test_predict_empty_is_value_error() -> None:
+    model = tinylm.Markov("abc", size=1)
+    with pytest.raises(ValueError):
+        model.predict("")

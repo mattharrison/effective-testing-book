@@ -1,0 +1,35 @@
+[project]
+name = "tinylm"
+version = "0.1.0"
+description = "Tiny project used to demonstrate Hypothesis property-based testing"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "pytest-ty>=0.1.2",
+]
+
+[build-system]
+requires = ["uv_build>=0.9.18,<0.10.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "hypothesis>=6.141.1",
+    "pytest>=8.4.2",
+    "prek",
+    "ruff",
+    "ty>=0.0.12",
+    "pytest-ty>=0.1.2",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ty.src]
+exclude = ["tests/test_types.py"]
+
+[tool.ty.rules]
+division-by-zero = "warn"
