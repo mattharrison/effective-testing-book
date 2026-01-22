@@ -1,6 +1,7 @@
 # Effective Testing with pytest & friends
 
-![Cover](efftest.png)
+# set width to 50%
+![Cover](efftest.png){ width=50% }
 
 A practical guide to testing Python code with pytest, doctest, type checking, uv, GitHub actions, precommit hooks, linting and more.
 
