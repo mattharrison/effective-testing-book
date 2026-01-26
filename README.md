@@ -13,7 +13,7 @@ This book emphasizes practical, hands-on examples using a small Markov chain pro
 ## Get the Book
 
 - **[metasnake.com](https://store.metasnake.com/testing)** - Direct from the author
-- **[Amazon](https://amazon.com)** - Also available on Amazon
+- **[Amazon](https://amzn.to/4rzoeBB)** - Also available on Amazon
 
 ## What's Inside
 
